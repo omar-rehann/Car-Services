@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- start swiper -->
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+    
+        swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+
+
+
+
+    <!-- end swiper -->
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-car" style="color: #000000;font-size: 30px;margin-left: 20px;"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active text-light " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light " href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle  text-light " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item  text-light " href="#">Action</a></li>
+                    <li><a class="dropdown-item text-light " href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item  text-light " href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- end nav -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start landing -->
+    <div class="landing">
+        <div class="contienr">
+            <div class="row  m-2  align-items-center ">
+                <div class="col-md-6 col-lg-8">
+                    <div class="text lh-lg  ">
+                        <h1> Complex Service <br> Your Car <i class="fa-solid fa-truck" style="color: #000000;margin-left: 10px;"></i></h1>
+                        <h4>Our easy-to-talk-to auto car advisors will explain any suggested maintenance or repairs. They won't take any actions unless you approve them first. OurASE-certified auto technicians are looking out for your vehicle and your budget.</h2>
+                            <button class="btn btn-warning   rounded mt-3 p-2.5">Leran More</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="image mt-3">
+                        <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/5ba928bd54e55227aaf9c0f6/billionphotos1641702min.png" class="img-fluid" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end landing -->
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start box -->
+    <div class="cradd">
+        <div class="row m-2">
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light  mb-2  " style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning   ">About Us</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary text-dark">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link text-dark  link-offset-2 link-underline-warning link-underline-opacity-100   ">More Than</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light  mb-2 " style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning   ">Quick Tips</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary text-dark">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link text-dark  link-offset-2 link-underline-warning link-underline-opacity-100   ">More Than</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light mb-2   " style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning   ">Quality Service</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary text-dark">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link text-dark  link-offset-2 link-underline-warning link-underline-opacity-100   ">More Than</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light  mb-2 " style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning   ">Important Text</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary text-dark">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link text-dark  link-offset-2 link-underline-warning link-underline-opacity-100   ">More Than</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light mb-2  " style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning   ">Hard Sction</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary text-dark">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link text-dark  link-offset-2 link-underline-warning link-underline-opacity-100   ">More Than</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light mb-2  " style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning   ">High-quality</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary text-dark">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link text-dark  link-offset-2 link-underline-warning link-underline-opacity-100   ">More Than</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- end box -->
+    <div class="alert alert-primary mt-3 m-2" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- strat info -->
+    <div class="info m-1">
+            <!-- startswiper -->
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+                slides-per-view="2">
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   "> Test your lights</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/d48b89b01a3b543984f5bf05/man-driving-his-elegant-car-taxi-services_23-2149149576.jpg" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   ">  Learn the car's features</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/0a8482ab79555d5f8f344ec4/ttt-min.jpg" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   ">   Get a tune-up for your car</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/f363f8aa50655b659f694c20/d260b19b-3f1a-3d75-0fcc-6760e9691293.jpg" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   ">  Test your brakes</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-photo/gps-navigation-system-phone-self-driving-car_53876-98094.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   "> Services your brakes</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-photo/group-friends-standing-front-car-raising-hands-gesturing_23-2147874730.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   "> Good Manger Team</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-photo/car-industry-ai-generated-image_268835-5690.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   "> Hihg Quality Image</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-photo/car-being-taking-care-workshop_23-2149580607.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   "> Good Team Works</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <!-- <swiper-slide>
+                    <div class="card" style="width: 100%;">
+                        <img src="https://img.freepik.com/free-photo/car-being-taking-care-workshop_23-2149580607.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" class="card-img-top" alt="...">
+                        <div class="card-body  text-start ">
+                          <h5 class="card-title fw-bold   text-warning   "> Good Team Works</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Leran More</a>
+                        </div>
+                    </div>
+                </swiper-slide> -->
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </div>
+    <!-- end info -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start content -->
+    <div class="content mt-5">
+      <div class="continer text-center">
+        <h1 class="text-dark">High-quality Car Restoration
+        </h1>
+        <p class="text-dark">You can send a photo to determine the extent of the damage. To do this, take a photo of your car and send it to an email address. 
+
+        </p>
+      </div>
+      <div class="con">
+        <div class="row align-items-center m-2 ">
+          <div class="col-md-6 col-lg-4">
+            <div class="image">
+              <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/ad27185ce5d45fe59cf42173/pexels-photo-3823200.jpeg" class="img-fluid  rounded " alt="">
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box text-center " style="padding: 51px;">
+              <i class="fa-solid fa-gears" style="color: #000000;font-size: 25px;"></i>
+              <h1 class="text-dark   fw-bold ">Body Repair
+              </h1>
+              <p class="text-dark">Sample text. Click to select the text box. Click again or double click to start editing the text.
+
+              </p>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/sideview-man-working-laptop-office_23-2148205675.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" class="img-fluid  rounded " alt="">
+
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box text-center " style="padding: 51px;">
+              <i class="fa-solid fa-users-gear" style="color: #000000;font-size: 25px;"></i>
+                            <h1 class="text-dark   fw-bold ">Car Care
+
+              </h1>
+              <p class="text-dark">Sample text. Click to select the text box. Click again or double click to start editing the text.
+
+              </p>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/light-bulb-with-drawing-graph_1232-2105.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" class="img-fluid rounded " alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box text-center " style="padding: 51px;">
+              <i class="fa-solid fa-users-gear" style="color: #000000;font-size: 25px;"></i>
+                            <h1 class="text-dark   fw-bold ">Quality
+
+
+              </h1>
+              <p class="text-dark">Sample text. Click to select the text box. Click again or double click to start editing the text.
+
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="end mt-5">
+        <div class="row m-2 lh-lg">
+          <div class=" col-4 col-md-2 col-lg-2">
+            <div class="image">
+              <img src="Img/airbnb.png" class="img-fluid mb-2" alt="">
+            </div>
+          </div>
+          <div class=" col-4 col-md-2 col-lg-2">
+            <div class="image">
+              <img src="Img/google.png" class="img-fluid mb-2" alt="">
+            </div>
+          </div>
+          <div class=" col-4 col-md-2 col-lg-2">
+            <div class="image">
+              <img src="Img/mailchimp.png" class="img-fluid mb-2" alt="">
+            </div>
+          </div>
+          <div class="  col-4 col-md-2 col-lg-2">
+            <div class="image">
+              <img src="Img/paypal.png" class="img-fluid mb-2" alt="">
+            </div>
+          </div>
+          <div class=" col-4  col-md-2 col-lg-2">
+            <div class="image">
+              <img src="Img/stripe.png" class="img-fluid mb-2" alt="">
+            </div>
+          </div>
+          <div class=" col-4 col-md-2 col-lg-2">
+            <div class="image">
+              <img src="Img/airbnb.png" class="img-fluid mb-2" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start test -->
+    <!-- start team -->
+    <div class="team" style="margin-top: 20px;">
+      <div class="continer">
+        <h5 class="text-center text-black-50">Our Team</h5>
+        <h3 class="text-center">The Expert Team on ReveTive
+
+        </h3>
+      </div>
+      <div class="content " style="margin:  10px auto;">
+        <div class="row m-2">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="teams/team_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Whakter White
+                </h5>
+                <p class="card-text text-black-50">Offer Company</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="teams/team_2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sarah Jonosn</h5>
+                <p class="card-text text-black-50">Owner The Store</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="teams/team_3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Anana Anderson</h5>
+                <p class="card-text text-black-50 ">Product Manger</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="team-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mija Kiite</h5>
+                <p class="card-text text-black-50 ">Bussines Man</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="team-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Alura Jenson</h5>
+                <p class="card-text text-black-50 ">Ceo</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="team-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Amado Gold Ba</h5>
+                <p class="card-text text-black-50 ">Onwer Company</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end team -->
+    <div class="alert alert-primary m-2" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    <!-- end test -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start portfilo -->
+    <div class="portfilo" id="por" style="margin-top: 30px;">
+      <div class="continer m-2 d-flex justify-content-between align-items-center">
+       <div class="text m-2">
+            <h5 class="text-black-50">Portfilo</h5>
+           <h3>Our Latest Project:</h3>
+       </div>
+         <div class="info m-2">
+               <button class="btn btn-outline-primary" style="border: 10px;padding: 10px;margin-bottom: 10px;">Browes Project <i class="fa-solid fa-arrow-right" style="color: #f1f1f2;margin-right: 5px;"></i></button>
+         </div>
+      </div>
+      <div class="content">
+        <div class="row m-1">
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-1.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-2.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-3.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-4.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-5.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-6.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-7.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-8.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="portfolio/work-9.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end portfilo -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start about me -->
+    <div class="about-me mt-5">
+      <div class="continer">
+        <div class="row m-2  align-items-center ">
+          <div class="col-md-12 col-lg-6">
+            <div class="image">
+              <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/5494c1a1d33f5c24a296a92a/2.jpg" class="img-fluid rounded  " alt="">
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="text">
+              <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id voluptatem, officia accusamus non repellendus vitae fuga fugit tenetur culpa iusto architecto nam reprehenderit? Iusto assumenda tenetur error dolores ratione.</p>
+              <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id voluptatem, officia accusamus non repellendus vitae fuga fugit tenetur culpa iusto architecto nam reprehenderit? Iusto assumenda tenetur error dolores ratione.</p>
+
+              <br>
+              <div class="image  d-flex ">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/835d4efa1ae850779e939546/carparkedrowroad_10541749.jpg" class="img-fluid   rounded" style="width: 50%;margin-right: 10px;" alt="">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/f13ebb82f770537fa73b037b/springcarwashing_14261879.jpg" class="img-fluid  rounded "style="width: 50%;" alt="">
+              </div>
+              
+              </div>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about me -->
+    <div class="alert alert-primary m-2">
+      <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- start contact -->
+    <div class="contact mt-5">
+      <div class="continer">
+        <div class="row m-2">
+          <div class="col-md-6 col-lg-6">
+            <form action="/action_page.php">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label fw-bold">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label fw-bold">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input fw-bold" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-danger mb-4">Submit</button>
+            </form> 
+
+          </div>
+          <div class="col-md-6 col-lg-3 lh-lg">
+            <div class="box">
+              <i class="fa-solid fa-phone" style="color: #0000ff;font-size: 25px;"></i>
+              <h4>001-234-5678
+              </h4>
+              <h4>001-987-7654
+              </h4>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-facebook" style="color: #0000ff;font-size: 25px;"></i>
+              <h4>@businessinfo
+
+
+              </h4>
+
+            </div>
+            <div class="box mt-3">
+              <i class="fa-solid fa-truck-medical" style="color: #0000ff;font-size: 25px;"></i>  
+                          <h4>Emergency +0223
+
+
+              </h4>
+
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-3 lh-lh">
+            <div class="box">
+              <i class="fa-solid fa-location-dot" style="color: #0000ff;font-size: 25px;"></i>
+              <h4> New York, NY 92103-9000
+              </h4>
+              <h4>121 Rock Sreet, 21 Avenue
+
+
+              </h4>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-envelopes-bulk" style="color: #0000ff;font-size: 25px;"></i>
+              <h4>test@info.com
+
+
+
+
+              </h4>
+
+            </div>
+            <div class="box mt-4">
+              <i class="fa-solid fa-paper-plane" style="color: #0000ff;font-size: 25px;"></i>              <h4>Online:9-Am For 12-Pm
+
+
+
+
+              </h4>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- strat footer -->
+    <div class="footer bg-dark">
+      <div class="continer text-center mt-3 pt-3">
+        <p class="text-light">Sample text. Click to select the text box. Click again or double click to start editing the text.
+        </p>
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;font-size: 20px;margin-left: 10px;"></i>
+        <i class="fa-brands fa-github" style="color: #ffffff;font-size: 20px;margin-left: 10px;"></i>
+        <i class="fa-brands fa-twitter" style="color: #ffffff;font-size: 20px;margin-left: 10px;"></i>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
